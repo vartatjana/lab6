@@ -4,8 +4,8 @@ python:
   - "3.4"
 install: pip install tabulate
 before_script:
-  - mkdir checker && wget http://judge.mipt.ru/mipt_cs_on_python3/extra/lab6/tests.tgz && tar -xf tests.tgz -C checker
-  - wget http://judge.mipt.ru/mipt_cs_on_python3/extra/checker.py -O checker/checker.py
+  - mkdir checker && wget http://judge.mipt.ru/mipt_cs_on_python3_2015/extra/lab6/tests.tgz && tar -xf tests.tgz -C checker
+  - wget http://judge.mipt.ru/mipt_cs_on_python3_2015/extra/checker.py -O checker/checker.py
 script: python checker/checker.py
 notifications:
   email: false
